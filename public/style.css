@@ -1,0 +1,72 @@
+body{
+   background-color: darkgray;
+   color: lightgray;
+   font-family: 'Montserrat', sans-serif;
+ }
+h1, h4, h5{
+   color: #3d3d3d;
+ }
+.userStories{
+   background: #ededed;
+   color: #3d3d3d;
+   border-color: gray;
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin: 0 auto;
+   width: 70%;
+ }
+
+.container{
+   background: #ffffff;
+   color: #000000;
+   border-color: gray;
+   border-width: 2px;
+   border-style: solid;
+   border-radius: 10px;
+   margin: 0 auto;
+   margin-top: 40px;
+   padding-top: 10px;
+   padding-bottom: 35px;
+   width: 95%;   
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.stories{
+   margin-left: 30px;
+}
+
+code{
+   font-size: 14px;
+}
+
+.output{
+   color: gray;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2d2c2c;
+  color: white;
+  text-align: center;
+  opacity: 0.5;
+}
