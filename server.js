@@ -7,14 +7,10 @@ var path = require('path');
 var app = express();
 
 const MongoClient = require('mongodb').MongoClient; 
-const mongomLab = 'mongodb://yemz:Zz202020@ds013916.mlab.com:13916/shorturlz';
-//const mongomLab = process.env.MONGOLAB_URI;
+const mongomLab = process.env.MONGOLAB_URI;
 
-const APIKey = 'AIzaSyCOkWyTZ2QNvDllMJpnO-Wu34U0TKbNrl0';
-const CSEId = '013027900218225028395:qo47zhtmouo';
-
-//const APIKey = process.env.GOOGLE_API_KEY;
-//const CSEId = process.env.GOOGLE_CSE_ID;
+const APIKey = process.env.GOOGLE_API_KEY;
+const CSEId = process.env.GOOGLE_CSE_ID;
 
 // access style.css
 app.use(express.static('public'));
@@ -53,7 +49,7 @@ request(apiUrl, { json: true }, (err, response, body) => {
       return console.log(err);
    }
     
-   //array to hold searched images from api
+   //array to hold searched images info from api
    var results = [];
    
    //loop to get url, snippet, thumbnail and context results from api
@@ -108,10 +104,10 @@ app.get('/api/latest', function(req, res, next){
          var collection = db.collection('images');
       }
 
-      //function to find last searches short url
+      //function to find last searches
       var findLastSearches = function (db, callback){
        
-        //enable display of term and date, disable id. Sort terms searched from latest and display the last 10 searches
+        //enable term and date, disable id. Sort terms searched from latest and display the last 10 searches
         collection.find(null, {term: 1, date: 1, "_id": 0})
                  .sort({$natural: -1}).limit(10).toArray(function(err, data) {
               
