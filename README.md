@@ -1,6 +1,3 @@
-Welcome to the Glitch BETA
-=========================
-
 # Image Search Abstraction Layer
 
 (Back End FreeCodeCamp Project)
