@@ -1,27 +1,18 @@
 Welcome to the Glitch BETA
 =========================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+# Image Search Abstraction Layer
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+(Back End FreeCodeCamp Project)
 
-Find out more [about Glitch](https://glitch.com/about).
+Tools: AWS - EC2 (Ubuntu), Apache, MongoDB (mLab), Node.js, Express.js, Google Custom Search API, Glitch.com
 
+User stories:
 
-Your Project
-------------
+    1. I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+    2. I can paginate through the responses by adding a ?offset=2 parameter to the URL.
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+    3. I can get a list of the most recently submitted search strings.
 
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
+Live App: https://imagesearch-fccproject.glitch.me/
