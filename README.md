@@ -1,6 +1,4 @@
-# Image Search Abstraction Layer
-
-(Back End FreeCodeCamp Project)
+# Image Search Abstraction Layer - (Back End FreeCodeCamp Project)
 
 Tools: AWS - EC2 (Ubuntu), Apache, MongoDB (mLab), Node.js, Express.js, Google Custom Search API, Glitch.com
 
